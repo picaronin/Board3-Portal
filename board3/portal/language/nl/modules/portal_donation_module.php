@@ -30,9 +30,9 @@ if (empty($lang) || !is_array($lang))
 // equally where a string contains only two placeholders which are used to wrap text
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 $lang = array_merge($lang, array(
-	'DONATION' 		=> 'PayPal donaties',
+	'DONATION'		=> 'PayPal donaties',
 	'DONATION_TEXT'	=> 'is een groep die is gericht op het leveren van diensten en heeft geen enkele intentie om er zelf financieel beter van te worden. Je donatie is van harte welkom, zodat de kosten van onze server, domeinnaam, etc. kunnen worden gedekt.',
-	'PAY_MSG'       => 'Gebruik een decimale punt (geen komma) als scheidingsteken, bijv: 3.50',
+	'PAY_MSG'		=> 'Gebruik een decimale punt (geen komma) als scheidingsteken, bijv: 3.50',
 	'PAY_ITEM'		=> 'Doneer!', // paypal item
 	'AUD'						=> 'Australische Dollars (AUD)',
 	'CAD'						=> 'Canadese Dollars (CAD)',
@@ -58,4 +58,6 @@ $lang = array_merge($lang, array(
 	'PORTAL_PAY_ACC'						=> 'PayPal account om te gebruiken',
 	'PORTAL_PAY_ACC_EXP'					=> 'Vul je Paypal e-mailadres in bijv: xxx@xxx.com',
 	'PORTAL_PAY_CUSTOM'						=> 'Voeg gebruikersnaam toe bij een PayPal donatie',
+	'PORTAL_PAY_DEFAULT'					=> 'Standaard valuta',
+	'PORTAL_PAY_DEFAULT_EXP'				=> 'Valuta die standaard wordt geselecteerd in de vervolgkeuzelijst voor valuta.',
 ));

@@ -32,9 +32,9 @@ if (empty($lang) || !is_array($lang))
 // equally where a string contains only two placeholders which are used to wrap text
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 $lang = array_merge($lang, array(
-	'DONATION' 		=> 'Donazioni PayPal',
+	'DONATION'		=> 'Donazioni PayPal',
 	'DONATION_TEXT'	=> 'è un fornitore di servizi non a scopo di lucro. Le tue donazioni sono ben accette: in questo modo potranno essere sostenuti i costi di mantenimento del sito.',
-	'PAY_MSG'       => 'Usare il punto come separatore decimali (per esempio 3.50)',
+	'PAY_MSG'		=> 'Usare il punto come separatore decimali (per esempio 3.50)',
 	'PAY_ITEM'		=> 'Dona!', // paypal item
 
 	'AUD'						=> 'Dollari australiani (AUD)',
@@ -61,5 +61,7 @@ $lang = array_merge($lang, array(
 	'ACP_PORTAL_PAYPAL_SETTINGS_EXP'		=> 'Qui è possibile personalizzare il blocco PayPal.',
 	'PORTAL_PAY_ACC'						=> 'Profilo PayPal da utilizzare',
 	'PORTAL_PAY_ACC_EXP'					=> 'Inserire l\'indirizzo e-mail del proprio profilo PayPal (per esempio xxx@xxx.com)',
-	'PORTAL_PAY_CUSTOM'				=> 'Allega il nome utente alla donazione PayPal',
+	'PORTAL_PAY_CUSTOM'						=> 'Allega il nome utente alla donazione PayPal',
+	'PORTAL_PAY_DEFAULT'					=> 'Valuta predefinita',
+	'PORTAL_PAY_DEFAULT_EXP'				=> 'Valuta che verrà selezionata per impostazione predefinita nell´elenco a discesa della valuta.',
 ));

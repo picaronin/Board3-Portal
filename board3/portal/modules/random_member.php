@@ -55,6 +55,12 @@ class random_member extends module_base
 
 	/** @var \phpbb\user */
 	protected $user;
+    
+	/** @var string phpBB root path */
+	protected $phpbb_root_path;       
+    
+	/** @var string PHP file extension */
+	protected $php_ext;
 
 	/**
 	* Construct a random member object
@@ -62,12 +68,16 @@ class random_member extends module_base
 	* @param \phpbb\db\driver $db phpBB database system
 	* @param \phpbb\template $template phpBB template
 	* @param \phpbb\user $user phpBB user object
+	* @param string $phpbb_root_path phpBB root path
+	* @param string $phpEx php file extension    
 	*/
-	public function __construct($db, $template, $user)
+	public function __construct($db, $template, $user, $phpbb_root_path, $phpEx)
 	{
 		$this->db = $db;
 		$this->template = $template;
 		$this->user = $user;
+		$this->phpbb_root_path = $phpbb_root_path;
+		$this->php_ext = $phpEx;        
 	}
 
 	/**
@@ -75,6 +85,11 @@ class random_member extends module_base
 	*/
 	public function get_template_side($module_id)
 	{
+		if (!function_exists('phpbb_get_user_rank'))
+		{
+			include($this->phpbb_root_path . 'includes/functions_display.' . $this->php_ext);
+		}        
+        
 		switch ($this->db->get_sql_layer())
 		{
 			case 'postgres':

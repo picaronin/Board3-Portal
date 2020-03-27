@@ -32,9 +32,9 @@ if (empty($lang) || !is_array($lang))
 // equally where a string contains only two placeholders which are used to wrap text
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 $lang = array_merge($lang, array(
-	'DONATION' 		=> 'Donaciones PayPal',
-	'DONATION_TEXT'	=> 'es una comunidad sin ánimo de lucro, sin la intención de cualquier ganancia monetaria. Sus donaciones son bienvenidas y su proposito es lograr pagar alojamiento, dominio, etc. y así gracias a ustedes mantenernos en línea.',
-	'PAY_MSG'       => 'Por favor, use un punto decimal (no una coma) como separador, por ejemplo 3.50',
+	'DONATION'		=> 'Donaciones mediante PayPal',
+	'DONATION_TEXT'	=> 'es una comunidad sin ánimo de lucro, si considera que esta página web merece la pena que exista y su temática y contenido le aportan un valor añadido en su labor diaria, le invitamos a que realice una donación para ayudar a mantenerla colaborando con los costes de su alojamiento.',
+	'PAY_MSG'		=> 'Por favor, use un punto decimal (no una coma) como separador, por ejemplo 3.50',
 	'PAY_ITEM'		=> 'Donar!', // paypal item
 
 	'AUD'						=> 'Australian Dollars (AUD)',
@@ -57,9 +57,11 @@ $lang = array_merge($lang, array(
 	'ILS'						=> 'Israeli New Shekels (ILS)',
 
 	// ACP
-	'ACP_PORTAL_PAYPAL_SETTINGS'			=> 'Configuración Paypal',
+	'ACP_PORTAL_PAYPAL_SETTINGS'		=> 'Configuración Paypal',
 	'ACP_PORTAL_PAYPAL_SETTINGS_EXP'	=> 'Aquí es donde puede personalizar el bloque de Paypal.',
-	'PORTAL_PAY_ACC'						=> 'Cuenta Paypal a utilizar',
+	'PORTAL_PAY_ACC'					=> 'Cuenta Paypal a utilizar',
 	'PORTAL_PAY_ACC_EXP'				=> 'Introduzca su dirección de correo electrónico paypal, ej. xxx@xxx.com',
-	'PORTAL_PAY_CUSTOM'				=> 'Anexar nombre de usuario a la donación de Paypal',
+	'PORTAL_PAY_CUSTOM'					=> 'Anexar nombre de usuario a la donación de Paypal',
+	'PORTAL_PAY_DEFAULT'				=> 'Moneda predeterminada',
+	'PORTAL_PAY_DEFAULT_EXP'			=> 'Moneda que se seleccionará por defecto en la lista desplegable de monedas.',
 ));

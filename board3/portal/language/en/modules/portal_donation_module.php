@@ -63,5 +63,5 @@ $lang = array_merge($lang, array(
 	'PORTAL_PAY_ACC_EXP'					=> 'Enter your Paypal e-mail address eg. xxx@xxx.com',
 	'PORTAL_PAY_CUSTOM'						=> 'Append username to Paypal donation',
 	'PORTAL_PAY_DEFAULT'					=> 'Default currency',
-	'PORTAL_PAY_DEFAULT_EXP'				=> 'Currency that will be selected by default in currency drop down list.'
+	'PORTAL_PAY_DEFAULT_EXP'				=> 'Currency that will be selected by default in currency drop down list.',
 ));

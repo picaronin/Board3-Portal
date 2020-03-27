@@ -24,15 +24,6 @@ function qsearch_onSubmit()
 	case 'bing':
 		window.open('http://www.bing.com/search?q=' + qs_keywords, '_bing', '');
 		return false;
-	case 'altavista':
-		window.open('http://www.altavista.com/web/results?itag=ody&q=' + qs_keywords + '&kgs=0&kls=0', '_altavista', '');
-		return false;
-	case 'lycos':
-		window.open('http://search.lycos.com/?query=' + qs_keywords, '_lycos', '');
-		return false;
-	case 'odp':
-		window.open('http://search.dmoz.org/cgi-bin/search?search=' + qs_keywords, '_odp', '');
-		return false;
 	default:
 		if( (i = qsearch_findEngine(qs_enginename)) >= 0 )
 		{
@@ -68,9 +59,6 @@ function qsearch_onSubmit()
 			<option value="google">Google</option>
 			<option value="yahoo">Yahoo</option>
 			<option value="bing">Bing</option>
-			<option value="altavista">Altavista</option>
-			<option value="lycos">Lycos</option>
-			<option value="odp">Open directory</option>
 		</optgroup>
 	</select>
 	<input type="hidden" name="search_fields" value="all" />
